@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/29 17:53:41 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/02 20:11:30 by aokur            ###   ########.fr       */
+/*   Created: 2025/06/02 20:08:03 by aokur             #+#    #+#             */
+/*   Updated: 2025/06/02 20:11:25 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned int	i;
-	char	*d;
+	size_t	i;
+	char	*a;
+	char	*b;
 
 	i = 0;
-	d = (char *)b;
-	while (i < len)
-	{
-		d[i] = (unsigned char)c;
-		i++;
-	}
-	return (d);
+	a = (char *)dst;
+	b = (char *)src;
+
+	
 }

@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 19:06:56 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/02 18:50:32 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/02 19:28:27 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif
