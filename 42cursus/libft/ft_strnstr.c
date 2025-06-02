@@ -6,12 +6,11 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 17:25:27 by aokur             #+#    #+#             */
-/*   Updated: 2025/05/29 22:15:31 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/02 17:31:50 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -34,12 +33,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return (NULL);
-}
-
-int main()
-{
-	char	*a = "alibarisokur";
-	char	*b = "alib";
-	printf("%s",ft_strnstr(a,b,3));
-
 }

@@ -6,13 +6,13 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 16:49:38 by aokur             #+#    #+#             */
-/*   Updated: 2025/05/26 17:54:00 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/02 18:49:50 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-int	ft_strcmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
