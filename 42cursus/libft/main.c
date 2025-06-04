@@ -6,27 +6,23 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 18:57:11 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/02 20:04:29 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/04 17:13:39 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
 
 int	main(void)
 {
-	int	a = 123;
-	int	b;
-	
-	char *arr1 = (char *)&a;
-	char *arr2 = (char *)&b;
-	
-	printf("A'NIN İLK DEĞERİ: %d\n", a);
-	ft_memcpy(arr2, arr1, 1);
-	ft_memcpy(arr2 + 1, arr1 + 1, 1);
-	ft_memcpy(arr2 + 2, arr1 + 2, 1);
-	ft_memcpy(arr2 + 3, arr1 + 3, 1);
-	printf("A'NIN İKİNCİ DEĞERİ: %d\n", a);
-	printf("YENİ B DEĞERİ: %d\n", b);
+	int a = 65;
+	char *b = (char *)&a;
+	char c[] = "selam";
+
+	ft_memmove(c, &a, 8);
+	printf("A'nın değeri: %c\n", b[3]);
+
+	return (0);
 }
