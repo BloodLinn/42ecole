@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 19:06:56 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/20 16:45:20 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 17:29:19 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <stddef.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 int			ft_atoi(const char *str);
 void		ft_bzero(void *s, size_t n);

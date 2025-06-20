@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 20:08:03 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/04 16:58:40 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 17:52:34 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t		i;
 	char		*a;
 	const char	*b;
 
-	i = 0;
 	a = (char *)dst;
 	b = (const char *)src;
-	if (!dst || !src)
+	if (!dst && !src)
 		return (NULL);
 	if (dst < src)
 		return (ft_memcpy(dst, src, len));

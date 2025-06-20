@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 20:43:34 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/02 17:39:00 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 17:53:11 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	if (s == NULL)
-		return (NULL);
 	while (s[i])
 		i++;
 	while (i >= 0)
