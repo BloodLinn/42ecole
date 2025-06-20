@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/02 18:57:11 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/04 17:13:39 by aokur            ###   ########.fr       */
+/*   Created: 2025/06/20 14:25:03 by aokur             #+#    #+#             */
+/*   Updated: 2025/06/20 17:02:44 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
-void	*ft_memmove(void *dst, const void *src, size_t len);
-
-int	main(void)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int a = 65;
-	char *b = (char *)&a;
-	char c[] = "selam";
+	char	*a;
+	char	b;
+	size_t	i;
 
-	ft_memmove(c, &a, 8);
-	printf("A'nın değeri: %c\n", b[3]);
-
-	return (0);
+	a = (char *)s;
+	b = (char )c;
+	i = 0;
+	if (!a || !b)
+		return (NULL);
+	while (i < n)
+	{
+		if (a[i] == b)
+			return ((void *)&a[i]);
+		i++;
+	}
+	return (NULL);
 }

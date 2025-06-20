@@ -6,13 +6,13 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 19:05:35 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/02 17:32:55 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 16:42:18 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }

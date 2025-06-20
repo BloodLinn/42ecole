@@ -6,11 +6,11 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 16:49:38 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/02 18:49:50 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 14:00:50 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

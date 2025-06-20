@@ -6,11 +6,11 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 16:16:58 by aokur             #+#    #+#             */
-/*   Updated: 2025/05/26 16:30:31 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 14:01:10 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

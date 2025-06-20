@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 17:53:41 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/04 13:44:03 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/20 15:28:29 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned int	i;
-	char	*d;
+	char			*d;
 
 	i = 0;
-	d = (char *)b;
+	d = (unsigned char *)b;
 	while (i < len)
 	{
 		d[i] = (unsigned char)c;
