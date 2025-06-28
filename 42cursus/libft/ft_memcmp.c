@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 15:13:45 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/20 17:45:40 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/28 17:24:44 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*a;
 	unsigned char	*b;
-	size_t	i;
+	size_t			i;
 
 	a = (unsigned char *)s1;
 	b = (unsigned char *)s2;

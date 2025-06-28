@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 14:25:03 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/20 17:50:33 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/28 17:24:09 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*a;
 	unsigned char	b;
-	size_t	i;
+	size_t			i;
 
 	a = (unsigned char *)s;
 	b = (unsigned char)c;

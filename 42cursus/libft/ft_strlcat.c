@@ -6,13 +6,11 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/20 14:00:11 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/20 14:17:47 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/28 17:09:57 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *s);
 
 unsigned	int	ft_strlcat(char *dest, char *src, unsigned int size)
 {

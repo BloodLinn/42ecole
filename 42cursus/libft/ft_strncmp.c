@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/26 16:49:38 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/20 17:39:03 by aokur            ###   ########.fr       */
+/*   Updated: 2025/06/28 17:23:06 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
-	unsigned char *s;
-	unsigned char *p;
+	size_t			i;
+	unsigned char	*s;
+	unsigned char	*p;
 
 	s = (unsigned char *)s1;
 	p = (unsigned char *)s2;

@@ -1,29 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/29 19:19:24 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/20 18:17:01 by aokur            ###   ########.fr       */
+/*   Created: 2025/06/28 17:59:52 by aokur             #+#    #+#             */
+/*   Updated: 2025/06/28 18:52:32 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*itoa_str(int n)
+{
+	char	*a;
+	size_t	i;
+
+	while(n)
+	{
+		a[i] = 
+	}
+}
+
+int	itoa_tmp(int n)
 {
 	int	i;
 
 	i = 0;
-	while (s[i])
+	if (n < 0)
 	{
-		if (s[i] == (unsigned char )c)
-			return ((char *)&s[i]);
+		n = n * -1;
 		i++;
 	}
-	if ((unsigned char )c == '\0')
-		return ((char *)&s[i]);
-	return (NULL);
+	while (n)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*tmp;
+	size_t	i;
+
+	tmp = malloc(itoa_tmp(n) * (sizeof(char)));
+	i = 0;
+	if (!tmp)
+		return (NULL);
+	while (i < n)
+	{
+		tmp[i] = (char);
+		i++;
+	}
+	return (tmp);
 }
