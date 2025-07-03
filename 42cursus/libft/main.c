@@ -6,14 +6,21 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 14:27:01 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/02 18:13:50 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/03 18:46:46 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+void	fupper(unsigned int c, char *b)
+{
+	if (*b >= 'a' && *b <= 'z')
+		*b -= 32;	
+}
+
 int main()
 {
-	size_t	a = 15;
-	printf("%s\n", ft_itoa(a));
+	char a[40] = "ali";
+	ft_striteri(a, fupper);
+	printf("%s\n", a);
 }
