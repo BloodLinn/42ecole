@@ -6,25 +6,26 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 14:27:01 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 19:58:34 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 22:13:16 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+//#include "libft.h"
 
-void    to_upper(unsigned int i, char *c)
-{
-    (void)i;
-    if (*c >= 'a' && *c <= 'z')
-        *c -= 32;
-}
+//int main(void)
+//{	
+	//char *s = " fatih baris s";
+	//char **str = ft_split(s, ' ');
+	//while (*str)
+	//{
+	//	printf("%s\n", *str);
+	//	str++;
+	//}
+	// printf("%d\n", 1);
+	// return (0);
+//}
 
+// fatih baris elif ali veli
+//** 
 
-
-int main()
-{
-	char	a[] = "ali";
-	ft_striteri(a,to_upper);
-	printf(a);
-
-}
+//*  *  *  *   

@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 18:49:46 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 19:15:31 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 22:12:08 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,53 @@ static int	count_words(char const *s, char c)
 	}
 	return (x);
 }
-int main()
+
+static void	free_split(char **result, int t)
 {
-	char a[] = "ali,baris,okur,42,istanbulda";
-	printf("%d\n", count_words(a,','));
+	while (t >= 0)
+	{
+		free(result[t]);
+		t--;
+	}
+	free(result);
 }
-/*char	**ft_split(char const *s, char c)
+
+static char	**word_array(char const *s, char c, char **result)
 {
- ben , ali
-}*/
+	size_t	i;
+	size_t	t;
+	size_t	start;
+
+	i = 0;
+	t = 0;
+	while (s[i])
+	{
+		while (s[i] && s[i] == c)
+			i++;
+		if (!s[i])
+			break ;
+		start = i;
+		while (s[i] && s[i] != c)
+			i++;
+		result[t] = ft_substr(s, start, i - start);
+		if (!result[t])
+		{
+			free_split(result, t);
+			return (NULL);
+		}
+		t++;
+	}
+	result[t] = NULL;
+	return (result);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**result;
+
+	result = malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!result)
+		return (NULL);
+	result = word_array(s, c, result);
+	return (result);
+}

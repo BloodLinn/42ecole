@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 16:22:10 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 16:39:21 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 22:11:20 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putendl_fd(char *s, int fd)
 
 	i = 0;
 	if (!s)
-		return;
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);
