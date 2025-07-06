@@ -6,13 +6,13 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 17:59:52 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/03 16:44:42 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 18:26:32 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	itoa_tmp(int n)
+static int	itoa_tmp(int n)
 {
 	int	i;
 
@@ -32,7 +32,7 @@ int	itoa_tmp(int n)
 	return (i);
 }
 
-char	*itoa_str(int n)
+static char	*itoa_str(int n)
 {
 	char	*a;
 	int		i;

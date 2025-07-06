@@ -1,33 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/20 16:49:16 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 18:07:28 by aokur            ###   ########.fr       */
+/*   Created: 2025/07/06 18:49:46 by aokur             #+#    #+#             */
+/*   Updated: 2025/07/06 19:15:31 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+static int	count_words(char const *s, char c)
 {
-	char	*a;
-	char	*b;
 	size_t	i;
-	size_t	c;
+	size_t	x;
 
-	a = s1;
-	i = ft_strlen (a);
-	b = malloc((i + 1) * sizeof(char));
-	c = 0;
-	while (a[c])
+	i = 0;
+	x = 0;
+	if (!s)
+		return (0);
+	while (s[i])
 	{
-		a[c] = b[c];
-		c++;
+		while (s[i] == c)
+			i++;
+		if (s[i] != c && s[i])
+			x++;
+		while (s[i] != c && s[i])
+			i++;
 	}
-	b[c] = '\0';
-	return (b);
+	return (x);
 }
+int main()
+{
+	char a[] = "ali,baris,okur,42,istanbulda";
+	printf("%d\n", count_words(a,','));
+}
+/*char	**ft_split(char const *s, char c)
+{
+ ben , ali
+}*/

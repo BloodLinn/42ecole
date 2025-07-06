@@ -6,21 +6,25 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 14:27:01 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/03 18:46:46 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 19:58:34 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	fupper(unsigned int c, char *b)
+void    to_upper(unsigned int i, char *c)
 {
-	if (*b >= 'a' && *b <= 'z')
-		*b -= 32;	
+    (void)i;
+    if (*c >= 'a' && *c <= 'z')
+        *c -= 32;
 }
+
+
 
 int main()
 {
-	char a[40] = "ali";
-	ft_striteri(a, fupper);
-	printf("%s\n", a);
+	char	a[] = "ali";
+	ft_striteri(a,to_upper);
+	printf(a);
+
 }

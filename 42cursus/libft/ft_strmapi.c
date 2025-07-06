@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 16:42:32 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/03 17:53:30 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 16:09:36 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*a;
+	char				*a;
 	unsigned int		i;
 	unsigned int		tmp;
 

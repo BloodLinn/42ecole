@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 14:08:44 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/28 15:09:21 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/06 18:11:46 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*tmp;
 	size_t	a;
+	char	*tmp;
 	size_t	i;
 
 	i = 0;
