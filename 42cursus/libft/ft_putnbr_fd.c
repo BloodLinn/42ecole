@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 16:34:49 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 16:53:48 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/07 16:38:34 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 		ft_putnbr_fd(n % 10, fd);
 	}
-	if (n > 0 && n < 10)
+	if (n >= 0 && n < 10)
 	{
 		ft_putchar_fd(n + 48, fd);
 	}

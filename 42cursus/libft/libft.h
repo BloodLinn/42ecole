@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 19:06:56 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 22:10:02 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/07 16:12:28 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 char		**ft_split(char const *s, char c);
+char		*ft_strdup(const char *s1);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 17:59:52 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/06 18:26:32 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/07 17:45:44 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	itoa_tmp(int n)
 		i++;
 	}
 	if (n == 0)
-		i++;
+		return (1);
 	while (n)
 	{
 		n = n / 10;
@@ -37,22 +37,25 @@ static char	*itoa_str(int n)
 	char	*a;
 	int		i;
 	int		b;
+	long	c;
 
+	c = n;
 	b = itoa_tmp(n);
-	a = malloc(b * sizeof(char));
+	a = malloc(b * sizeof(char) + 1);
 	i = 0;
 	if (!a)
 		return (NULL);
-	if (n < 0)
+	if (c < 0)
 	{
-		n = n * -1;
+		c = c * -1;
 		a[i] = '-';
 		i++;
 	}
+	a[b] = '\0';
 	while (i < b)
 	{
-		a[b - 1] = (n % 10) + 48;
-		n /= 10;
+		a[b - 1] = (c % 10) + 48;
+		c /= 10;
 		b--;
 	}
 	return (a);
@@ -63,10 +66,7 @@ char	*ft_itoa(int n)
 	char	*tmp;
 	int		i;
 
-	tmp = malloc(itoa_tmp(n) * (sizeof(char)));
 	i = 0;
-	if (!tmp)
-		return (NULL);
 	tmp = itoa_str(n);
 	return (tmp);
 }

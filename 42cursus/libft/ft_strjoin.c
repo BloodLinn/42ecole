@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 16:33:16 by aokur             #+#    #+#             */
-/*   Updated: 2025/06/28 17:23:55 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/07 17:40:46 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	b = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	tmp = malloc(((ft_strlen(s1)) + ft_strlen(s2)) * (sizeof(char)));
+	tmp = malloc(((ft_strlen(s1)) + ft_strlen(s2) + 1) * (sizeof(char)));
 	if (!tmp)
 		return (NULL);
 	while (s1[l])
