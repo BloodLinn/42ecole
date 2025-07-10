@@ -21,8 +21,7 @@ clean:
 
 fclean: clean
 	rm -rf $(NAME)
-	rm -rf DENEME
 
 re:	fclean all
 
-.PHONY: all clean fclean exec
+.PHONY: all clean fclean
