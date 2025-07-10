@@ -25,8 +25,4 @@ fclean: clean
 
 re:	fclean all
 
-exec: $(all)
-	@cc main.c $(NAME) -o DENEME
-	@./DENEME
-
-.PHONY: all clean fclean exec 
+.PHONY: all clean fclean exec

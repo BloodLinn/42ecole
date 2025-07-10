@@ -6,7 +6,7 @@
 /*   By: aokur <aokur@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/28 17:59:52 by aokur             #+#    #+#             */
-/*   Updated: 2025/07/07 17:45:44 by aokur            ###   ########.fr       */
+/*   Updated: 2025/07/09 15:53:52 by aokur            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,7 @@ static char	*itoa_str(int n)
 char	*ft_itoa(int n)
 {
 	char	*tmp;
-	int		i;
 
-	i = 0;
 	tmp = itoa_str(n);
 	return (tmp);
 }
